@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74151E8A1AE7B58B00DEE41B /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 74151E891AE7B58B00DEE41B /* GenerateThumbnailForURL.m */; };
+		74151E8C1AE7B58B00DEE41B /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 74151E8B1AE7B58B00DEE41B /* GeneratePreviewForURL.m */; };
+		74151E8E1AE7B58B00DEE41B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 74151E8D1AE7B58B00DEE41B /* main.c */; };
+		74151E971AE7B70E00DEE41B /* topdrawer.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74151E841AE7B58B00DEE41B /* topdrawer.qlgenerator */; };
+		747ED15A1AF36BE500355777 /* td.py in Resources */ = {isa = PBXBuildFile; fileRef = 747ED1591AF36BE500355777 /* td.py */; };
+		74887FC61AE7C38900501AB3 /* topdrawer.top in Resources */ = {isa = PBXBuildFile; fileRef = 74887FC51AE7C38900501AB3 /* topdrawer.top */; };
+		74DE5A371AF3804900F11EB2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74DE5A361AF3804900F11EB2 /* icon.png */; };
+		74E602761AE7BBA400600D3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E602751AE7BBA400600D3F /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74151E961AE7B6FE00DEE41B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/QuickLook";
+			dstSubfolderSpec = 0;
+			files = (
+				74151E971AE7B70E00DEE41B /* topdrawer.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		74151E841AE7B58B00DEE41B /* topdrawer.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = topdrawer.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		74151E881AE7B58B00DEE41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74151E891AE7B58B00DEE41B /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		74151E8B1AE7B58B00DEE41B /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		74151E8D1AE7B58B00DEE41B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		747ED1591AF36BE500355777 /* td.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = td.py; sourceTree = "<group>"; };
+		74887FC51AE7C38900501AB3 /* topdrawer.top */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = topdrawer.top; sourceTree = "<group>"; };
+		74DE5A361AF3804900F11EB2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		74E602751AE7BBA400600D3F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74151E801AE7B58B00DEE41B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E602761AE7BBA400600D3F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74151E7A1AE7B58B00DEE41B = {
+			isa = PBXGroup;
+			children = (
+				74E602811AE7BC0D00600D3F /* Frameworks */,
+				74151E861AE7B58B00DEE41B /* topdrawer */,
+				74151E851AE7B58B00DEE41B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74151E851AE7B58B00DEE41B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74151E841AE7B58B00DEE41B /* topdrawer.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74151E861AE7B58B00DEE41B /* topdrawer */ = {
+			isa = PBXGroup;
+			children = (
+				74887FCF1AE7C77C00501AB3 /* temp files */,
+				74151E891AE7B58B00DEE41B /* GenerateThumbnailForURL.m */,
+				74151E8B1AE7B58B00DEE41B /* GeneratePreviewForURL.m */,
+				74887FD01AE7C78500501AB3 /* shell scripts */,
+				74151E8D1AE7B58B00DEE41B /* main.c */,
+				74151E871AE7B58B00DEE41B /* Supporting Files */,
+			);
+			path = topdrawer;
+			sourceTree = "<group>";
+		};
+		74151E871AE7B58B00DEE41B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74DE5A361AF3804900F11EB2 /* icon.png */,
+				74151E881AE7B58B00DEE41B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74887FCF1AE7C77C00501AB3 /* temp files */ = {
+			isa = PBXGroup;
+			children = (
+				74887FC51AE7C38900501AB3 /* topdrawer.top */,
+			);
+			name = "temp files";
+			sourceTree = "<group>";
+		};
+		74887FD01AE7C78500501AB3 /* shell scripts */ = {
+			isa = PBXGroup;
+			children = (
+				747ED1591AF36BE500355777 /* td.py */,
+			);
+			name = "shell scripts";
+			sourceTree = "<group>";
+		};
+		74E602811AE7BC0D00600D3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74E602751AE7BBA400600D3F /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		74151E811AE7B58B00DEE41B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		74151E831AE7B58B00DEE41B /* topdrawer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74151E911AE7B58B00DEE41B /* Build configuration list for PBXNativeTarget "topdrawer" */;
+			buildPhases = (
+				74151E7F1AE7B58B00DEE41B /* Sources */,
+				74151E801AE7B58B00DEE41B /* Frameworks */,
+				74151E811AE7B58B00DEE41B /* Headers */,
+				74151E821AE7B58B00DEE41B /* Resources */,
+				74151E961AE7B6FE00DEE41B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = topdrawer;
+			productName = topdrawer;
+			productReference = 74151E841AE7B58B00DEE41B /* topdrawer.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74151E7B1AE7B58B00DEE41B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Yannick Ulrich";
+				TargetAttributes = {
+					74151E831AE7B58B00DEE41B = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 74151E7E1AE7B58B00DEE41B /* Build configuration list for PBXProject "topdrawer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 74151E7A1AE7B58B00DEE41B;
+			productRefGroup = 74151E851AE7B58B00DEE41B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74151E831AE7B58B00DEE41B /* topdrawer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74151E821AE7B58B00DEE41B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DE5A371AF3804900F11EB2 /* icon.png in Resources */,
+				747ED15A1AF36BE500355777 /* td.py in Resources */,
+				74887FC61AE7C38900501AB3 /* topdrawer.top in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74151E7F1AE7B58B00DEE41B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74151E8A1AE7B58B00DEE41B /* GenerateThumbnailForURL.m in Sources */,
+				74151E8C1AE7B58B00DEE41B /* GeneratePreviewForURL.m in Sources */,
+				74151E8E1AE7B58B00DEE41B /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		74151E8F1AE7B58B00DEE41B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		74151E901AE7B58B00DEE41B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		74151E921AE7B58B00DEE41B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = topdrawer/Info.plist;
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		74151E931AE7B58B00DEE41B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = topdrawer/Info.plist;
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74151E7E1AE7B58B00DEE41B /* Build configuration list for PBXProject "topdrawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74151E8F1AE7B58B00DEE41B /* Debug */,
+				74151E901AE7B58B00DEE41B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74151E911AE7B58B00DEE41B /* Build configuration list for PBXNativeTarget "topdrawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74151E921AE7B58B00DEE41B /* Debug */,
+				74151E931AE7B58B00DEE41B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74151E7B1AE7B58B00DEE41B /* Project object */;
+}
