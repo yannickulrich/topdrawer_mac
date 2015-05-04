@@ -87,6 +87,11 @@
                                     <action selector="performClose:" target="-1" id="HmO-Ls-i7Q"/>
                                 </connections>
                             </menuItem>
+                            <menuItem title="Copy" keyEquivalent="c" id="MPU-RA-AqN">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="30C-MI-9Pg"/>
+                                </connections>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="aJh-i4-bef"/>
                             <menuItem title="Print…" keyEquivalent="p" id="aTl-1u-JFS">
                                 <connections>
