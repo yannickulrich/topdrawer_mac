@@ -59,24 +59,22 @@ for plot in range(len(plotZones)-1):
 	subtext  = re.findall("TITLE [\d\.]+ [\d\.]+\s+\"(.+)\"" ,plotZones[plot])
 	comments = re.findall(" \((.+)",plotZones[plot])
 
+	relError = [
+		float(i[1]) / float(i[0]) if float(i[0]) != 0 else -1 for i in 
+		re.findall("\s+[\d\.E+-]+\s+([\d\.E+-]+)\s+([\d\.E+-]+)",plotdata)
+	]
+	relError = [i for i in relError if i != -1]
 
-	#v = np.array(
-	#	[[float(j) for j in i] for i in re.findall("\s+([\d\.E+-]+)\s+([\d\.E+-]+)\s+([\d\.E+-]+)",plotdata)]
-	#)
-	#v = [[float(j) for j in i] for i in re.findall("\s+([\d\.E+-]+)\s+([\d\.E+-]+)\s+([\d\.E+-]+)",plotdata)]
-	#plt.figure()
-	#plt.title(plotname)
-	#plt.xlabel(xlabel)
-	#plt.ylabel(ylabel)
-	#plt.xlim(xlim)
-	#plt.errorbar(v[:,0], v[:,1], v[:,2])
-	#plt.savefig(basepath+"/plot"+str(plot) + ".png")
 
 	html +="<h1>" + plotname + "</h1><pre>"+"\n".join(comments)+"</pre>"
-	#html +="<img src=\"" + basepath + "/plot"+str(plot) + ".png\">"
 	html += gnuplot(plotdata, xlabel, ylabel, xlim)
-	html +="<pre>"+"\n".join(subtext)+"</pre>" 
+	html +="<pre>"+"\n".join(subtext)+"</pre>"
+	html +="<pre>"
+	html +="Highest relative error: " + str(100*max(relError)) + "%\n"
+	html +="Smallest relative error: " + str(100*min(relError)) + "%\n"
+	html +="Mean relative error: " + str(100*sum(relError)/len(relError)) + "%\n"
+	html +="</pre>"
 
-print html
-print """</body>
+html = html+"""</body>
 </html>"""
+print html

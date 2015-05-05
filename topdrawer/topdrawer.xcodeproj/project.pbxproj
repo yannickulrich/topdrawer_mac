@@ -13,7 +13,6 @@
 		74151E971AE7B70E00DEE41B /* topdrawer.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74151E841AE7B58B00DEE41B /* topdrawer.qlgenerator */; };
 		747ED15A1AF36BE500355777 /* td.py in Resources */ = {isa = PBXBuildFile; fileRef = 747ED1591AF36BE500355777 /* td.py */; };
 		74887FC61AE7C38900501AB3 /* topdrawer.top in Resources */ = {isa = PBXBuildFile; fileRef = 74887FC51AE7C38900501AB3 /* topdrawer.top */; };
-		74DE5A371AF3804900F11EB2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 74DE5A361AF3804900F11EB2 /* icon.png */; };
 		74E602761AE7BBA400600D3F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E602751AE7BBA400600D3F /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +37,6 @@
 		74151E8D1AE7B58B00DEE41B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		747ED1591AF36BE500355777 /* td.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = td.py; sourceTree = "<group>"; };
 		74887FC51AE7C38900501AB3 /* topdrawer.top */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = topdrawer.top; sourceTree = "<group>"; };
-		74DE5A361AF3804900F11EB2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		74E602751AE7BBA400600D3F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -87,7 +85,6 @@
 		74151E871AE7B58B00DEE41B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				74DE5A361AF3804900F11EB2 /* icon.png */,
 				74151E881AE7B58B00DEE41B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -185,7 +182,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DE5A371AF3804900F11EB2 /* icon.png in Resources */,
 				747ED15A1AF36BE500355777 /* td.py in Resources */,
 				74887FC61AE7C38900501AB3 /* topdrawer.top in Resources */,
 			);
