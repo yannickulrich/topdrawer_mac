@@ -18,6 +18,8 @@
 @property (assign) IBOutlet WebView *webView;
 
 -(IBAction)printDocument:(id)sender;
+-(IBAction)revert:(id)sender;
+-(IBAction)performFindPanel:(id)sender;
 
 @end
 

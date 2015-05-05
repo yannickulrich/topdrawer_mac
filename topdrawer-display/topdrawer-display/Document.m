@@ -68,7 +68,7 @@ static NSString * const kPluginBundleId = @"com.collinproject.topdrawer-display"
     // If you override either of these, you should also override -isEntireFileLoaded to return NO if the contents are lazily loaded.
 	
 	
-	
+	NSLog(@"File type is %@", typeName);
 	
 	NSString *tURL = [[NSBundle bundleWithIdentifier:kPluginBundleId] pathForResource:@"topdrawer" ofType:@"top"];
 	NSString *shellScript = [[NSBundle bundleWithIdentifier:kPluginBundleId] pathForResource:@"td" ofType:@"py"];
@@ -97,6 +97,7 @@ static NSString * const kPluginBundleId = @"com.collinproject.topdrawer-display"
 	//[[wview mainFrame] loadHTMLString:html baseURL:[[NSBundle mainBundle] bundleURL]];
 	//[wview.mainFrame loadData:odata MIMEType:@"text/html" textEncodingName:@"utf-8" baseURL:nil];
 	
+	[[[self webView] mainFrame] loadHTMLString:html baseURL:[[NSBundle mainBundle] bundleURL]];
 	
 	
     return YES;
@@ -112,6 +113,30 @@ static NSString * const kPluginBundleId = @"com.collinproject.topdrawer-display"
 	[printOperation runOperation];
 
 
+}
+
+
+-(IBAction)performFindPanel:(id)sender
+{
+	[[self webView] performFindPanelAction:sender];
+}
+
+-(IBAction)revert:(id)sender
+{
+	NSURL *furl = [self fileURL];
+	NSError *error;
+	
+	
+	if (furl == nil)
+	{
+		NSLog(@"File not on disk");
+		return;
+	}
+	
+	NSData *d = [NSData dataWithContentsOfURL:furl];
+	[self readFromData:d ofType:@".top" error:&error];
+	//- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
+	
 }
 
 @end
