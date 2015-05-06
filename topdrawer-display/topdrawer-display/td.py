@@ -60,7 +60,7 @@ for plot in range(len(plotZones)-1):
 	comments = re.findall(" \((.+)",plotZones[plot])
 
 	relError = [
-		float(i[1]) / float(i[0]) if float(i[0]) != 0 else -1 for i in 
+		abs(float(i[1]) / float(i[0])) if float(i[0]) != 0 else -1 for i in 
 		re.findall("\s+[\d\.E+-]+\s+([\d\.E+-]+)\s+([\d\.E+-]+)",plotdata)
 	]
 	relError = [i for i in relError if i != -1]
