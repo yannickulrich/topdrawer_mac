@@ -11,6 +11,10 @@ Many MC generators like [MCFM](http://mcfm.fnal.gov) produce their final histogr
 
 Using these tools, *.top files can be displayed using QuickView and an native app.
 
+## Requirements
+ - python (at least 2.7) with modules re, sys and subprocess
+ - ps2pdf (for export function)
+ - gnuplot supporting svg and PostScript export
 
 ## References
 [1] [SLAC CGTM No. 178](https://www.slac.stanford.edu/vault/collvault/greylit/cgtm/CGTM178Rev4_1987.pdf)
