@@ -12,6 +12,7 @@
 @interface Document : NSDocument
 {
 	NSString * html;
+	NSData * myinputData;
 }
 
 //@property (retain, nonatomic) IBOutlet WebView *wview;
@@ -20,6 +21,7 @@
 -(IBAction)printDocument:(id)sender;
 -(IBAction)revert:(id)sender;
 -(IBAction)performFindPanel:(id)sender;
+-(IBAction)exportPDF:(id)sender;
 
 @end
 

@@ -17,6 +17,7 @@
 		74643DFD1AF374DA004978CC /* td.py in Resources */ = {isa = PBXBuildFile; fileRef = 74643DFC1AF374DA004978CC /* td.py */; };
 		74643DFF1AF374F9004978CC /* topdrawer.top in Resources */ = {isa = PBXBuildFile; fileRef = 74643DFE1AF374F9004978CC /* topdrawer.top */; };
 		74643E011AF37684004978CC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74643E001AF37684004978CC /* WebKit.framework */; };
+		7497E2AA1B08AE4E005137B0 /* td2pdf.py in Resources */ = {isa = PBXBuildFile; fileRef = 7497E2A91B08AE4E005137B0 /* td2pdf.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		74643DFC1AF374DA004978CC /* td.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = td.py; sourceTree = "<group>"; };
 		74643DFE1AF374F9004978CC /* topdrawer.top */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = topdrawer.top; sourceTree = "<group>"; };
 		74643E001AF37684004978CC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		7497E2A91B08AE4E005137B0 /* td2pdf.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = td2pdf.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				74643DDE1AF37430004978CC /* Document.m */,
 				74643DFE1AF374F9004978CC /* topdrawer.top */,
 				74643DFC1AF374DA004978CC /* td.py */,
+				7497E2A91B08AE4E005137B0 /* td2pdf.py */,
 				74643DE01AF37430004978CC /* Document.xib */,
 				74643DE31AF37430004978CC /* Images.xcassets */,
 				74643DE51AF37430004978CC /* MainMenu.xib */,
@@ -212,6 +215,7 @@
 			files = (
 				74643DFD1AF374DA004978CC /* td.py in Resources */,
 				74643DE21AF37430004978CC /* Document.xib in Resources */,
+				7497E2AA1B08AE4E005137B0 /* td2pdf.py in Resources */,
 				74643DE41AF37430004978CC /* Images.xcassets in Resources */,
 				74643DE71AF37430004978CC /* MainMenu.xib in Resources */,
 				74643DFF1AF374F9004978CC /* topdrawer.top in Resources */,
@@ -429,6 +433,7 @@
 				74643DF81AF37430004978CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74643DF91AF37430004978CC /* Build configuration list for PBXNativeTarget "topdrawer-displayTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +442,7 @@
 				74643DFB1AF37430004978CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

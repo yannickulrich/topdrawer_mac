@@ -69,6 +69,7 @@ static NSString * const kPluginBundleId = @"com.collinproject.topdrawer-display"
 	
 	
 	NSLog(@"File type is %@", typeName);
+	myinputData = data;
 	
 	NSString *tURL = [[NSBundle bundleWithIdentifier:kPluginBundleId] pathForResource:@"topdrawer" ofType:@"top"];
 	NSString *shellScript = [[NSBundle bundleWithIdentifier:kPluginBundleId] pathForResource:@"td" ofType:@"py"];
@@ -136,6 +137,50 @@ static NSString * const kPluginBundleId = @"com.collinproject.topdrawer-display"
 	NSData *d = [NSData dataWithContentsOfURL:furl];
 	[self readFromData:d ofType:@".top" error:&error];
 	//- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError {
+	
+}
+
+-(IBAction)exportPDF:(id)sender
+{
+	NSLog(@"ETs");
+	
+	NSSavePanel * savePanel = [NSSavePanel savePanel];
+	[savePanel setAllowedFileTypes:@[@"pdf"]];
+	[savePanel setDirectoryURL:[[self fileURL] URLByDeletingLastPathComponent]];
+	
+	NSInteger tvarInt = [savePanel runModal];
+	
+	if(tvarInt == NSFileHandlingPanelOKButton){
+		
+	} else if(tvarInt == NSFileHandlingPanelCancelButton) {
+		NSLog(@"doSaveAs we have a Cancel button");
+		return;
+	} else {
+		NSLog(@"doSaveAs tvarInt not equal 1 or zero = %3ld",(long)tvarInt);
+		return;
+	} // end if
+	
+	
+	
+	 NSString *tURL = [[NSBundle bundleWithIdentifier:kPluginBundleId] pathForResource:@"topdrawer" ofType:@"top"];
+	 NSString *shellScript = [[NSBundle bundleWithIdentifier:kPluginBundleId] pathForResource:@"td2pdf" ofType:@"py"];
+	 
+	 [myinputData writeToFile:tURL atomically:YES];
+	 
+	 
+	 NSPipe *pipe = [NSPipe pipe];
+	 
+	 NSTask *task = [[NSTask alloc] init];
+	 task.launchPath = @"/usr/bin/python";
+	 task.standardOutput = pipe;
+	 
+	 [task setArguments:[NSArray arrayWithObjects:shellScript, nil]];
+	 [task launch];
+	 
+	 
+	 NSData *odata = [pipe.fileHandleForReading readDataToEndOfFile];
+	 
+	[odata writeToURL:[savePanel URL] atomically:YES];
 	
 }
 
